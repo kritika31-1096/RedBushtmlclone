@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+body {
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  #headerBlock {
+    width: 100%;
+    z-index: 1;
+    background: #d84f57;
+    position: fixed;
+  }
+  
+  #headerBlock .container {
+    display: flex;
+    width: 1200px;
+    margin: 0px auto;
+    height: 55px;
+    align-items: center;
+  }
+  
+  #headerBlock .container .leftNav {
+    flex: 1;
+  }
+  
+  #headerBlock .container .rightNav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* slider block css starts here */
+  
+  #sliderBlock img {
+    width: 100%;
+    height: 450px;
+  }
+  
+  /*--------left menu block -----------------*/
+  .leftNav section {
+    display: flex;
+  }
+  
+  .leftNav ul,
+  .rightNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .leftNav ul li a,
+  .rightNav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px;
+    font-size: 14px;
+    display: inline-block;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .leftmenu {
+    flex: 8;
+  }
+  
+  .logo a {
+    background-image: url(../images/logo.png);
+    width: 80px;
+    height: 48px;
+    display: flex;
+    text-indent: -9999px;
+  }
+  
+  .leftNav ul li a.active {
+    font-weight: 600;
+    border-bottom: 3px solid #fff;
+    transition: ease-in-out 0.6s;
+  }
+  
+  .leftNav ul li a:hover {
+    color: #f9e7ea;
+  }
+  
+  .fa-user-circle {
+    font-size: 35px;
+    font-weight: lighter;
+    line-height: 20px;
+  }
+  
+  .fa-chevron-down {
+    margin: 0px 0px 0 6px;
+  }
+  
+  .after_user_circle {
+    margin: -24px 21px 0 41px !important;
+    display: block;
+  }
+  
+  #searchBusesBlock article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    position: relative;
+    top: 50px;
+  }
+  
+  #sliderBlock {
+    background-image: url("../images/safetyplus1.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
+  
+  /*-------Attribute selector -----*/
+  
+  input[type="date"] {
+    font-size: 11px;
+    padding: 14px 30px !important;
+    border-right: none !important;
+  }
+  
+  #sliderBlock article input {
+    padding: 14px 28px 16px 40px;
+    border: none;
+    border-right: 1.3px solid #888;
+    box-sizing: border-box;
+  }
+  
+  #sliderBlock article button {
+    height: 46px;
+    width: 144px;
+    background: #d74f57;
+    box-sizing: border-box;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  
+  .city_icon {
+    position: relative;
+  }
+  
+  .city_icon i {
+    position: absolute;
+    top: -14px;
+    left: 6px;
+    font-size: 20px;
+  }
+  
+  /* latestUpdateBlock css starts here */
+  #latestUpdateBlock {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  #latestUpdateBlock article div:nth-child(1) {
+    flex: 2;
+  }
+  
+  #latestUpdateBlock article div:nth-child(2) {
+    flex: 8;
+  }
+  
+  
+  #latestUpdateBlock article div:nth-child(3) {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 94px;
+  }
+  
+  #latestUpdateBlock article {
+    width: 530px;
+    height: 100px;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    background-color: #fff5e5;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+    
+  }
+  .bell-on i {
+    color: #d74f57 !important;
+    font-size: 50px !important;
+  }
+  
+  #latestUpdateBlock article h4 {
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  #latestUpdateBlock article p {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+    font-weight: lighter;
+  }
+  
+  #latestUpdateBlock article button {
+    width: 130px;
+    height: 25px;
+    background: #d74f57;
+    color: #fff;
+    padding: 4px;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  /*----on time css block starts here -----*/
+  #OnTimeBlock > article {
+    width: 1200px;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    margin: 60px auto;
+    display: flex;
+    height: 320px;
+  }
+  
+  .leftOnDiv {
+    flex: 1;
+  }
+  .leftOnDiv p {
+    background: url("../images/ic-shield-red-big.png");
+    height: 88px;
+    width: 88px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    margin: 20px;
+  }
+  
+  .rightOnDiv {
+    flex: 8;
+  }
+  
+  .img3_hero,
+  .img4_Hero {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  
+  .img3_hero {
+    background-image: url("../images/tip-icon.png");
+    width: 24px;
+    height: 24px;
+  }
+  
+  .img4_Hero {
+    background-image: url("../images/otgText.png");
+    width: 156px;
+    height: 26px;
+  }
+  .rightInsideFooter {
+    display: flex;
+    margin: 10px;
+    
+  }
+  .rightInsideFooter div {
+    flex: 1;
+  }
+  
+  /* ----on time css block ends here -----*/
+  .rightInsideFooter div h2{
+    height: 24px;
+    font-size: 19px;
+    font-weight: bolder;
+    color: #1446a0;
+  }
+  
+
+  /*-------------------------------------------------*/
+
+
+  #trackMyBus {
+    width: 1200px;
+    border: 1px solid #cccccc;
+    background: #dbdbdb;
+    margin: 60px auto;
+    height: 524px;
+  }
+  .htracker{
+    display: flex;
+  }
+  .lefttrack{
+    flex: 1;
+  }
+  .righttrack{
+    flex: 1;
+  }
+  .lefttrack p{
+    display: inline-block;
+    
+    width: 43%;
+    margin-left: 71px;
+    margin-top: 26px;
+    background-repeat: no-repeat;
+    background-image: url('../images/tmb_img.png');
+    width: 440px;
+    height: 282px;
+    object-fit: contain;
+    text-indent: -99999px;
+  }
+  .tracker{
+    display: flex;
+    
+    
+  }
+  .buses{
+    flex: 1;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+  }
+  .routes{
+    flex: 1;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+  }
+  .users{
+    flex: 1;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+  }
+  .tracker div h1{
+    font-size: 36px;
+    text-align: center;
+    color: #da4d52;
+  }
+  .tracker div p{
+    font-size: 14px;
+    text-align: center;
+    color: #4a4a4a;
+  }
+
+  /*------------------------------------------------*/
+  .globalBlockContent {
+    width: 1200px;
+    margin: 30px auto;
+  }
+  
+  .globalBlockContent h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .globalBlockContent article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  
+  }
+  
+  .globalBlockContent article>div {
+    flex-basis: 32%;
+    /* ----width ----*/
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  
+  }
+  
+  .india p:first-child {
+    background: url(../images/sprite.png) !important;
+    height: 80px;
+    width: 123px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -294px !important;
+    text-indent: -9999px;
+  }
+  
+  .colombia p:first-child {
+    background: url(../images/sprite.png) !important;
+    height: 80px;
+    width: 123px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -614px !important;
+    text-indent: -9999px;
+  }
+  
+  .country {
+    text-align: center;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 15px;
+  }
+  .indonesia p:first-child {
+    background: url(../images/sprite.png) !important;
+    height: 80px;
+    width: 123px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -214px !important;
+    text-indent: -9999px;
+  }
+
+  .singapore p:first-child {
+    background: url(../images/sprite.png) !important;
+    height: 80px;
+    width: 123px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -534px !important;
+    text-indent: -9999px;
+  }
+
+  .malaysia p:first-child {
+    background: url(../images/sprite.png) !important;
+    height: 80px;
+    width: 123px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -373px !important;
+    text-indent: -9999px;
+  }
+
+  .peru p:first-child {
+    background: url(../images/sprite.png) !important;
+    height: 80px;
+    width: 123px;
+    background-repeat: no-repeat !important;
+    background-position: 0px -454px !important;
+    text-indent: -9999px;
+  }
+  /*--------------------------------------------------------------------------*/
+ nav ul li a:hover{
+  
+
+ }
+ .rightNav ul ul{
+   display: none;
+   border: 2px solid black;
+   background: white;
+ }
+
+ .rightNav ul ul li a{
+   width: 150px;
+   display: block;
+   font-size: 12px;
+   height: 5px;
+   color: black;
+ }
+
+ .rightNav ul li:hover>ul{
+   display: block;
+   position: absolute;
+ }
+ .rightNav ul ul h5{
+   padding: opx;
+   margin: 0px 9px;
+   color: gray;
+ }
+
+ /*----------we promise to deliver starts here------*/
+#promiseBlock article{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#promiseBlock article>header{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: 100px;
+
+}
+#promiseBlock article>header p{
+  margin: 0;
+  padding: o;
+}
+#promiseBlock article>header p img{
+  height:100px;
+}
+#promiseBlock article>header h1{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+.mainPromiseBlock{
+  background-attachment: #fff;
+  display: flex;
+  margin-top:50px;
+  border: 1px solid #cccccc87;
+
+}
+.mainPromiseBlock div {
+  flex: 1;
+  border: 1px solid #cccccc87;
+  display: flex;
+  flex-direction: column;
+  height: 86px;
+}
+
+.mainPromiseBlock div h5{
+  text-transform: uppercase;
+  color: #444;
+  font-weight: ;
+}
+
+
+ /*----------we promise to deliver ends here------*/
